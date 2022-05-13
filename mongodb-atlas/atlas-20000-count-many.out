@@ -1,0 +1,1483 @@
+2022-05-13 16:40:12,168 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - >>> init production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:12,255 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[production-shard-00-01.vx60e.mongodb.net:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=50000}
+2022-05-13 16:40:12,265 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - <<< init
+2022-05-13 16:40:12,271 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-05-13 16:40:12,529 [cluster-ClusterId{value='627e6dcc18a0e42cff9e128a', description='null'}-production-shard-00-01.vx60e.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:13205}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:12,563 [cluster-ClusterId{value='627e6dcc18a0e42cff9e128a', description='null'}-production-shard-00-01.vx60e.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=production-shard-00-01.vx60e.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32610583, setName='atlas-11ct6i-shard-0', canonicalAddress=production-shard-00-01.vx60e.mongodb.net:27017, hosts=[production-shard-00-00.vx60e.mongodb.net:27017, production-shard-00-01.vx60e.mongodb.net:27017, production-shard-00-02.vx60e.mongodb.net:27017], passives=[], arbiters=[], primary='production-shard-00-01.vx60e.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='EUROPE_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000001c, setVersion=1, lastWriteDate=Fri May 13 16:40:12 CEST 2022, lastUpdateTimeNanos=357157443690375}
+2022-05-13 16:40:12,863 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:13206}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:12,973 [main] INFO  d.i.mongodb.perf.OperationExecutor - >>> OperationExecutor threadCount: 10, opsCount: 20000, maxDurationInSeconds: 3600, operation: CountOperation
+2022-05-13 16:40:12,973 [main] INFO  d.i.mongodb.perf.OperationExecutor - java execution path: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version/mongodb-performance-test.jar
+2022-05-13 16:40:13,243 [pool-2-thread-4] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:13207}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,253 [pool-2-thread-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:13208}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,253 [pool-2-thread-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:13210}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,253 [pool-2-thread-10] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:13214}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,253 [pool-2-thread-6] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:13212}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,275 [pool-2-thread-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:13211}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,275 [pool-2-thread-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:13209}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,284 [pool-2-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:13215}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:40:13,284 [pool-2-thread-8] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:13213}] to production-shard-00-01.vx60e.mongodb.net:27017
+13.05.2022 16.40.13 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 220
+         mean rate = 218,13 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 26,90 milliseconds
+               max = 335,79 milliseconds
+              mean = 44,65 milliseconds
+            stddev = 56,73 milliseconds
+            median = 32,43 milliseconds
+              75% <= 34,62 milliseconds
+              95% <= 50,25 milliseconds
+              98% <= 319,44 milliseconds
+              99% <= 335,69 milliseconds
+            99.9% <= 335,79 milliseconds
+
+
+13.05.2022 16.40.14 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 525
+         mean rate = 261,34 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 27,16 milliseconds
+               max = 47,59 milliseconds
+              mean = 33,00 milliseconds
+            stddev = 3,72 milliseconds
+            median = 32,43 milliseconds
+              75% <= 34,39 milliseconds
+              95% <= 40,51 milliseconds
+              98% <= 44,28 milliseconds
+              99% <= 46,12 milliseconds
+            99.9% <= 47,59 milliseconds
+
+
+13.05.2022 16.40.15 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 803
+         mean rate = 266,93 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 27,49 milliseconds
+               max = 46,39 milliseconds
+              mean = 35,30 milliseconds
+            stddev = 4,48 milliseconds
+            median = 34,57 milliseconds
+              75% <= 38,32 milliseconds
+              95% <= 43,31 milliseconds
+              98% <= 45,13 milliseconds
+              99% <= 45,56 milliseconds
+            99.9% <= 46,39 milliseconds
+
+
+13.05.2022 16.40.16 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 1087
+         mean rate = 271,19 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 26,63 milliseconds
+               max = 70,32 milliseconds
+              mean = 35,81 milliseconds
+            stddev = 5,14 milliseconds
+            median = 35,65 milliseconds
+              75% <= 38,62 milliseconds
+              95% <= 44,30 milliseconds
+              98% <= 48,78 milliseconds
+              99% <= 52,12 milliseconds
+            99.9% <= 70,32 milliseconds
+
+
+13.05.2022 16.40.17 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 1398
+         mean rate = 279,33 calls/second
+     1-minute rate = 279,60 calls/second
+     5-minute rate = 279,60 calls/second
+    15-minute rate = 279,60 calls/second
+               min = 26,46 milliseconds
+               max = 46,88 milliseconds
+              mean = 31,93 milliseconds
+            stddev = 3,08 milliseconds
+            median = 31,63 milliseconds
+              75% <= 33,69 milliseconds
+              95% <= 37,63 milliseconds
+              98% <= 40,14 milliseconds
+              99% <= 41,68 milliseconds
+            99.9% <= 46,88 milliseconds
+
+
+13.05.2022 16.40.18 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 1699
+         mean rate = 282,79 calls/second
+     1-minute rate = 279,60 calls/second
+     5-minute rate = 279,60 calls/second
+    15-minute rate = 279,60 calls/second
+               min = 27,01 milliseconds
+               max = 43,94 milliseconds
+              mean = 33,41 milliseconds
+            stddev = 3,41 milliseconds
+            median = 32,72 milliseconds
+              75% <= 35,69 milliseconds
+              95% <= 39,35 milliseconds
+              98% <= 41,79 milliseconds
+              99% <= 43,78 milliseconds
+            99.9% <= 43,94 milliseconds
+
+
+13.05.2022 16.40.19 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 2010
+         mean rate = 286,78 calls/second
+     1-minute rate = 279,60 calls/second
+     5-minute rate = 279,60 calls/second
+    15-minute rate = 279,60 calls/second
+               min = 26,99 milliseconds
+               max = 39,37 milliseconds
+              mean = 31,74 milliseconds
+            stddev = 2,63 milliseconds
+            median = 31,39 milliseconds
+              75% <= 33,49 milliseconds
+              95% <= 36,93 milliseconds
+              98% <= 38,47 milliseconds
+              99% <= 38,89 milliseconds
+            99.9% <= 39,37 milliseconds
+
+
+13.05.2022 16.40.20 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 2320
+         mean rate = 289,77 calls/second
+     1-minute rate = 279,60 calls/second
+     5-minute rate = 279,60 calls/second
+    15-minute rate = 279,60 calls/second
+               min = 26,83 milliseconds
+               max = 45,28 milliseconds
+              mean = 32,32 milliseconds
+            stddev = 3,08 milliseconds
+            median = 32,27 milliseconds
+              75% <= 34,10 milliseconds
+              95% <= 37,89 milliseconds
+              98% <= 39,18 milliseconds
+              99% <= 41,16 milliseconds
+            99.9% <= 45,28 milliseconds
+
+
+13.05.2022 16.40.21 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 2634
+         mean rate = 292,46 calls/second
+     1-minute rate = 279,60 calls/second
+     5-minute rate = 279,60 calls/second
+    15-minute rate = 279,60 calls/second
+               min = 27,33 milliseconds
+               max = 47,39 milliseconds
+              mean = 32,20 milliseconds
+            stddev = 2,71 milliseconds
+            median = 31,77 milliseconds
+              75% <= 33,12 milliseconds
+              95% <= 37,95 milliseconds
+              98% <= 39,76 milliseconds
+              99% <= 42,72 milliseconds
+            99.9% <= 47,39 milliseconds
+
+
+13.05.2022 16.40.22 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 2955
+         mean rate = 295,26 calls/second
+     1-minute rate = 282,05 calls/second
+     5-minute rate = 280,11 calls/second
+    15-minute rate = 279,77 calls/second
+               min = 26,21 milliseconds
+               max = 41,19 milliseconds
+              mean = 30,98 milliseconds
+            stddev = 2,61 milliseconds
+            median = 30,59 milliseconds
+              75% <= 32,28 milliseconds
+              95% <= 36,16 milliseconds
+              98% <= 37,91 milliseconds
+              99% <= 38,85 milliseconds
+            99.9% <= 41,19 milliseconds
+
+
+13.05.2022 16.40.23 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 3263
+         mean rate = 296,41 calls/second
+     1-minute rate = 282,05 calls/second
+     5-minute rate = 280,11 calls/second
+    15-minute rate = 279,77 calls/second
+               min = 26,76 milliseconds
+               max = 43,13 milliseconds
+              mean = 32,52 milliseconds
+            stddev = 3,05 milliseconds
+            median = 32,09 milliseconds
+              75% <= 34,31 milliseconds
+              95% <= 37,77 milliseconds
+              98% <= 42,10 milliseconds
+              99% <= 42,66 milliseconds
+            99.9% <= 43,13 milliseconds
+
+
+13.05.2022 16.40.24 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 3566
+         mean rate = 296,94 calls/second
+     1-minute rate = 282,05 calls/second
+     5-minute rate = 280,11 calls/second
+    15-minute rate = 279,77 calls/second
+               min = 26,70 milliseconds
+               max = 40,04 milliseconds
+              mean = 32,58 milliseconds
+            stddev = 2,38 milliseconds
+            median = 32,45 milliseconds
+              75% <= 33,77 milliseconds
+              95% <= 37,09 milliseconds
+              98% <= 38,42 milliseconds
+              99% <= 38,77 milliseconds
+            99.9% <= 40,04 milliseconds
+
+
+13.05.2022 16.40.25 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 3874
+         mean rate = 297,82 calls/second
+     1-minute rate = 282,05 calls/second
+     5-minute rate = 280,11 calls/second
+    15-minute rate = 279,77 calls/second
+               min = 26,79 milliseconds
+               max = 61,40 milliseconds
+              mean = 32,51 milliseconds
+            stddev = 3,71 milliseconds
+            median = 32,13 milliseconds
+              75% <= 33,93 milliseconds
+              95% <= 36,63 milliseconds
+              98% <= 39,19 milliseconds
+              99% <= 52,86 milliseconds
+            99.9% <= 61,40 milliseconds
+
+
+13.05.2022 16.40.26 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 4176
+         mean rate = 298,12 calls/second
+     1-minute rate = 282,05 calls/second
+     5-minute rate = 280,11 calls/second
+    15-minute rate = 279,77 calls/second
+               min = 26,83 milliseconds
+               max = 48,58 milliseconds
+              mean = 33,13 milliseconds
+            stddev = 3,66 milliseconds
+            median = 32,61 milliseconds
+              75% <= 35,00 milliseconds
+              95% <= 39,97 milliseconds
+              98% <= 43,05 milliseconds
+              99% <= 48,25 milliseconds
+            99.9% <= 48,58 milliseconds
+
+
+13.05.2022 16.40.27 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 4487
+         mean rate = 298,99 calls/second
+     1-minute rate = 284,04 calls/second
+     5-minute rate = 280,55 calls/second
+    15-minute rate = 279,92 calls/second
+               min = 25,63 milliseconds
+               max = 46,80 milliseconds
+              mean = 32,43 milliseconds
+            stddev = 2,86 milliseconds
+            median = 31,99 milliseconds
+              75% <= 33,79 milliseconds
+              95% <= 38,20 milliseconds
+              98% <= 40,66 milliseconds
+              99% <= 41,82 milliseconds
+            99.9% <= 46,80 milliseconds
+
+
+13.05.2022 16.40.28 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 4787
+         mean rate = 299,07 calls/second
+     1-minute rate = 284,04 calls/second
+     5-minute rate = 280,55 calls/second
+    15-minute rate = 279,92 calls/second
+               min = 27,17 milliseconds
+               max = 45,74 milliseconds
+              mean = 32,85 milliseconds
+            stddev = 3,54 milliseconds
+            median = 32,28 milliseconds
+              75% <= 34,59 milliseconds
+              95% <= 39,46 milliseconds
+              98% <= 41,23 milliseconds
+              99% <= 42,69 milliseconds
+            99.9% <= 45,74 milliseconds
+
+
+13.05.2022 16.40.29 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 5078
+         mean rate = 298,57 calls/second
+     1-minute rate = 284,04 calls/second
+     5-minute rate = 280,55 calls/second
+    15-minute rate = 279,92 calls/second
+               min = 27,68 milliseconds
+               max = 46,06 milliseconds
+              mean = 34,42 milliseconds
+            stddev = 3,84 milliseconds
+            median = 33,99 milliseconds
+              75% <= 36,28 milliseconds
+              95% <= 42,39 milliseconds
+              98% <= 45,12 milliseconds
+              99% <= 45,51 milliseconds
+            99.9% <= 46,06 milliseconds
+
+
+13.05.2022 16.40.30 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 5372
+         mean rate = 298,38 calls/second
+     1-minute rate = 284,04 calls/second
+     5-minute rate = 280,55 calls/second
+    15-minute rate = 279,92 calls/second
+               min = 26,53 milliseconds
+               max = 53,78 milliseconds
+              mean = 33,93 milliseconds
+            stddev = 3,97 milliseconds
+            median = 33,17 milliseconds
+              75% <= 36,02 milliseconds
+              95% <= 42,68 milliseconds
+              98% <= 43,61 milliseconds
+              99% <= 46,69 milliseconds
+            99.9% <= 53,78 milliseconds
+
+
+13.05.2022 16.40.31 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 5652
+         mean rate = 297,39 calls/second
+     1-minute rate = 284,04 calls/second
+     5-minute rate = 280,55 calls/second
+    15-minute rate = 279,92 calls/second
+               min = 26,61 milliseconds
+               max = 51,32 milliseconds
+              mean = 36,21 milliseconds
+            stddev = 4,39 milliseconds
+            median = 36,44 milliseconds
+              75% <= 38,86 milliseconds
+              95% <= 43,53 milliseconds
+              98% <= 46,65 milliseconds
+              99% <= 48,71 milliseconds
+            99.9% <= 51,32 milliseconds
+
+
+13.05.2022 16.40.32 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 5947
+         mean rate = 297,21 calls/second
+     1-minute rate = 284,66 calls/second
+     5-minute rate = 280,74 calls/second
+    15-minute rate = 279,99 calls/second
+               min = 26,43 milliseconds
+               max = 49,01 milliseconds
+              mean = 33,87 milliseconds
+            stddev = 4,05 milliseconds
+            median = 33,34 milliseconds
+              75% <= 35,62 milliseconds
+              95% <= 42,42 milliseconds
+              98% <= 43,94 milliseconds
+              99% <= 46,38 milliseconds
+            99.9% <= 49,01 milliseconds
+
+
+13.05.2022 16.40.33 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 6256
+         mean rate = 297,70 calls/second
+     1-minute rate = 284,66 calls/second
+     5-minute rate = 280,74 calls/second
+    15-minute rate = 279,99 calls/second
+               min = 26,12 milliseconds
+               max = 49,69 milliseconds
+              mean = 32,61 milliseconds
+            stddev = 3,27 milliseconds
+            median = 32,08 milliseconds
+              75% <= 33,96 milliseconds
+              95% <= 38,86 milliseconds
+              98% <= 41,44 milliseconds
+              99% <= 43,23 milliseconds
+            99.9% <= 49,69 milliseconds
+
+
+13.05.2022 16.40.34 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 6556
+         mean rate = 297,87 calls/second
+     1-minute rate = 284,66 calls/second
+     5-minute rate = 280,74 calls/second
+    15-minute rate = 279,99 calls/second
+               min = 26,74 milliseconds
+               max = 43,95 milliseconds
+              mean = 32,56 milliseconds
+            stddev = 3,59 milliseconds
+            median = 32,00 milliseconds
+              75% <= 34,60 milliseconds
+              95% <= 39,05 milliseconds
+              98% <= 42,32 milliseconds
+              99% <= 42,74 milliseconds
+            99.9% <= 43,95 milliseconds
+
+
+13.05.2022 16.40.35 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 6838
+         mean rate = 297,16 calls/second
+     1-minute rate = 284,66 calls/second
+     5-minute rate = 280,74 calls/second
+    15-minute rate = 279,99 calls/second
+               min = 27,21 milliseconds
+               max = 56,28 milliseconds
+              mean = 36,16 milliseconds
+            stddev = 6,16 milliseconds
+            median = 34,68 milliseconds
+              75% <= 39,90 milliseconds
+              95% <= 49,26 milliseconds
+              98% <= 55,79 milliseconds
+              99% <= 56,21 milliseconds
+            99.9% <= 56,28 milliseconds
+
+
+13.05.2022 16.40.36 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 7112
+         mean rate = 296,26 calls/second
+     1-minute rate = 284,66 calls/second
+     5-minute rate = 280,74 calls/second
+    15-minute rate = 279,99 calls/second
+               min = 24,45 milliseconds
+               max = 52,03 milliseconds
+              mean = 36,09 milliseconds
+            stddev = 5,35 milliseconds
+            median = 35,17 milliseconds
+              75% <= 39,28 milliseconds
+              95% <= 45,62 milliseconds
+              98% <= 50,46 milliseconds
+              99% <= 51,58 milliseconds
+            99.9% <= 52,03 milliseconds
+
+
+13.05.2022 16.40.37 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 7421
+         mean rate = 296,71 calls/second
+     1-minute rate = 285,44 calls/second
+     5-minute rate = 280,96 calls/second
+    15-minute rate = 280,07 calls/second
+               min = 27,00 milliseconds
+               max = 48,23 milliseconds
+              mean = 32,80 milliseconds
+            stddev = 3,60 milliseconds
+            median = 31,86 milliseconds
+              75% <= 33,73 milliseconds
+              95% <= 39,85 milliseconds
+              98% <= 46,43 milliseconds
+              99% <= 47,05 milliseconds
+            99.9% <= 48,23 milliseconds
+
+
+13.05.2022 16.40.38 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 7723
+         mean rate = 296,94 calls/second
+     1-minute rate = 285,44 calls/second
+     5-minute rate = 280,96 calls/second
+    15-minute rate = 280,07 calls/second
+               min = 26,99 milliseconds
+               max = 51,11 milliseconds
+              mean = 32,95 milliseconds
+            stddev = 3,83 milliseconds
+            median = 32,27 milliseconds
+              75% <= 34,71 milliseconds
+              95% <= 40,20 milliseconds
+              98% <= 43,52 milliseconds
+              99% <= 45,95 milliseconds
+            99.9% <= 51,11 milliseconds
+
+
+13.05.2022 16.40.39 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 8011
+         mean rate = 296,60 calls/second
+     1-minute rate = 285,44 calls/second
+     5-minute rate = 280,96 calls/second
+    15-minute rate = 280,07 calls/second
+               min = 26,90 milliseconds
+               max = 47,33 milliseconds
+              mean = 34,27 milliseconds
+            stddev = 4,07 milliseconds
+            median = 33,63 milliseconds
+              75% <= 36,24 milliseconds
+              95% <= 42,06 milliseconds
+              98% <= 46,72 milliseconds
+              99% <= 47,23 milliseconds
+            99.9% <= 47,33 milliseconds
+
+
+13.05.2022 16.40.40 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 8302
+         mean rate = 296,38 calls/second
+     1-minute rate = 285,44 calls/second
+     5-minute rate = 280,96 calls/second
+    15-minute rate = 280,07 calls/second
+               min = 27,42 milliseconds
+               max = 48,93 milliseconds
+              mean = 34,53 milliseconds
+            stddev = 4,40 milliseconds
+            median = 33,75 milliseconds
+              75% <= 37,49 milliseconds
+              95% <= 42,56 milliseconds
+              98% <= 44,23 milliseconds
+              99% <= 46,68 milliseconds
+            99.9% <= 48,93 milliseconds
+
+
+13.05.2022 16.40.41 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 8595
+         mean rate = 296,31 calls/second
+     1-minute rate = 285,44 calls/second
+     5-minute rate = 280,96 calls/second
+    15-minute rate = 280,07 calls/second
+               min = 26,69 milliseconds
+               max = 71,29 milliseconds
+              mean = 33,99 milliseconds
+            stddev = 5,55 milliseconds
+            median = 32,83 milliseconds
+              75% <= 36,32 milliseconds
+              95% <= 41,99 milliseconds
+              98% <= 52,30 milliseconds
+              99% <= 58,87 milliseconds
+            99.9% <= 71,29 milliseconds
+
+
+13.05.2022 16.40.42 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 8903
+         mean rate = 296,68 calls/second
+     1-minute rate = 286,38 calls/second
+     5-minute rate = 281,23 calls/second
+    15-minute rate = 280,16 calls/second
+               min = 25,84 milliseconds
+               max = 43,70 milliseconds
+              mean = 32,64 milliseconds
+            stddev = 3,56 milliseconds
+            median = 31,93 milliseconds
+              75% <= 34,40 milliseconds
+              95% <= 40,31 milliseconds
+              98% <= 42,27 milliseconds
+              99% <= 42,61 milliseconds
+            99.9% <= 43,70 milliseconds
+
+
+13.05.2022 16.40.43 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 9212
+         mean rate = 297,03 calls/second
+     1-minute rate = 286,38 calls/second
+     5-minute rate = 281,23 calls/second
+    15-minute rate = 280,16 calls/second
+               min = 26,91 milliseconds
+               max = 47,67 milliseconds
+              mean = 32,30 milliseconds
+            stddev = 3,22 milliseconds
+            median = 31,77 milliseconds
+              75% <= 33,63 milliseconds
+              95% <= 38,53 milliseconds
+              98% <= 41,58 milliseconds
+              99% <= 43,88 milliseconds
+            99.9% <= 47,67 milliseconds
+
+
+13.05.2022 16.40.44 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 9529
+         mean rate = 297,71 calls/second
+     1-minute rate = 286,38 calls/second
+     5-minute rate = 281,23 calls/second
+    15-minute rate = 280,16 calls/second
+               min = 26,65 milliseconds
+               max = 42,39 milliseconds
+              mean = 31,66 milliseconds
+            stddev = 2,69 milliseconds
+            median = 31,43 milliseconds
+              75% <= 32,95 milliseconds
+              95% <= 36,29 milliseconds
+              98% <= 38,80 milliseconds
+              99% <= 40,97 milliseconds
+            99.9% <= 42,39 milliseconds
+
+
+13.05.2022 16.40.45 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 9836
+         mean rate = 298,00 calls/second
+     1-minute rate = 286,38 calls/second
+     5-minute rate = 281,23 calls/second
+    15-minute rate = 280,16 calls/second
+               min = 25,92 milliseconds
+               max = 44,32 milliseconds
+              mean = 32,29 milliseconds
+            stddev = 3,27 milliseconds
+            median = 31,59 milliseconds
+              75% <= 33,66 milliseconds
+              95% <= 39,67 milliseconds
+              98% <= 41,49 milliseconds
+              99% <= 42,22 milliseconds
+            99.9% <= 44,32 milliseconds
+
+
+13.05.2022 16.40.46 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 10148
+         mean rate = 298,40 calls/second
+     1-minute rate = 286,38 calls/second
+     5-minute rate = 281,23 calls/second
+    15-minute rate = 280,16 calls/second
+               min = 26,96 milliseconds
+               max = 45,58 milliseconds
+              mean = 32,45 milliseconds
+            stddev = 3,19 milliseconds
+            median = 31,85 milliseconds
+              75% <= 34,23 milliseconds
+              95% <= 38,62 milliseconds
+              98% <= 39,56 milliseconds
+              99% <= 42,59 milliseconds
+            99.9% <= 45,58 milliseconds
+
+
+13.05.2022 16.40.47 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 10433
+         mean rate = 298,02 calls/second
+     1-minute rate = 287,95 calls/second
+     5-minute rate = 281,64 calls/second
+    15-minute rate = 280,30 calls/second
+               min = 26,65 milliseconds
+               max = 53,11 milliseconds
+              mean = 34,57 milliseconds
+            stddev = 4,08 milliseconds
+            median = 34,15 milliseconds
+              75% <= 37,34 milliseconds
+              95% <= 41,84 milliseconds
+              98% <= 43,93 milliseconds
+              99% <= 45,17 milliseconds
+            99.9% <= 53,11 milliseconds
+
+
+13.05.2022 16.40.48 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 10726
+         mean rate = 297,82 calls/second
+     1-minute rate = 287,95 calls/second
+     5-minute rate = 281,64 calls/second
+    15-minute rate = 280,30 calls/second
+               min = 26,95 milliseconds
+               max = 56,45 milliseconds
+              mean = 34,67 milliseconds
+            stddev = 4,92 milliseconds
+            median = 33,63 milliseconds
+              75% <= 37,00 milliseconds
+              95% <= 44,95 milliseconds
+              98% <= 49,71 milliseconds
+              99% <= 50,39 milliseconds
+            99.9% <= 56,45 milliseconds
+
+
+13.05.2022 16.40.49 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 11029
+         mean rate = 298,00 calls/second
+     1-minute rate = 287,95 calls/second
+     5-minute rate = 281,64 calls/second
+    15-minute rate = 280,30 calls/second
+               min = 27,32 milliseconds
+               max = 48,33 milliseconds
+              mean = 32,53 milliseconds
+            stddev = 2,97 milliseconds
+            median = 32,02 milliseconds
+              75% <= 34,15 milliseconds
+              95% <= 37,50 milliseconds
+              98% <= 39,61 milliseconds
+              99% <= 43,46 milliseconds
+            99.9% <= 48,33 milliseconds
+
+
+13.05.2022 16.40.50 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 11340
+         mean rate = 298,32 calls/second
+     1-minute rate = 287,95 calls/second
+     5-minute rate = 281,64 calls/second
+    15-minute rate = 280,30 calls/second
+               min = 26,87 milliseconds
+               max = 50,11 milliseconds
+              mean = 32,52 milliseconds
+            stddev = 3,26 milliseconds
+            median = 32,13 milliseconds
+              75% <= 34,43 milliseconds
+              95% <= 38,33 milliseconds
+              98% <= 39,27 milliseconds
+              99% <= 42,96 milliseconds
+            99.9% <= 50,11 milliseconds
+
+
+13.05.2022 16.40.51 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 11647
+         mean rate = 298,54 calls/second
+     1-minute rate = 287,95 calls/second
+     5-minute rate = 281,64 calls/second
+    15-minute rate = 280,30 calls/second
+               min = 26,90 milliseconds
+               max = 44,84 milliseconds
+              mean = 32,41 milliseconds
+            stddev = 3,05 milliseconds
+            median = 32,11 milliseconds
+              75% <= 34,24 milliseconds
+              95% <= 37,82 milliseconds
+              98% <= 40,58 milliseconds
+              99% <= 41,69 milliseconds
+            99.9% <= 44,84 milliseconds
+
+
+13.05.2022 16.40.52 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 11962
+         mean rate = 298,98 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,02 calls/second
+    15-minute rate = 280,44 calls/second
+               min = 26,67 milliseconds
+               max = 49,58 milliseconds
+              mean = 31,90 milliseconds
+            stddev = 2,82 milliseconds
+            median = 31,67 milliseconds
+              75% <= 33,18 milliseconds
+              95% <= 37,01 milliseconds
+              98% <= 38,62 milliseconds
+              99% <= 40,88 milliseconds
+            99.9% <= 49,58 milliseconds
+
+
+13.05.2022 16.40.53 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 12269
+         mean rate = 299,18 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,02 calls/second
+    15-minute rate = 280,44 calls/second
+               min = 27,24 milliseconds
+               max = 43,66 milliseconds
+              mean = 32,51 milliseconds
+            stddev = 3,44 milliseconds
+            median = 31,58 milliseconds
+              75% <= 33,97 milliseconds
+              95% <= 40,43 milliseconds
+              98% <= 41,18 milliseconds
+              99% <= 42,80 milliseconds
+            99.9% <= 43,66 milliseconds
+
+
+13.05.2022 16.40.54 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 12576
+         mean rate = 299,37 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,02 calls/second
+    15-minute rate = 280,44 calls/second
+               min = 26,88 milliseconds
+               max = 47,17 milliseconds
+              mean = 32,17 milliseconds
+            stddev = 3,14 milliseconds
+            median = 31,73 milliseconds
+              75% <= 33,28 milliseconds
+              95% <= 38,69 milliseconds
+              98% <= 40,82 milliseconds
+              99% <= 43,35 milliseconds
+            99.9% <= 47,17 milliseconds
+
+
+13.05.2022 16.40.55 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 12878
+         mean rate = 299,44 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,02 calls/second
+    15-minute rate = 280,44 calls/second
+               min = 27,16 milliseconds
+               max = 49,91 milliseconds
+              mean = 33,39 milliseconds
+            stddev = 4,17 milliseconds
+            median = 32,36 milliseconds
+              75% <= 35,52 milliseconds
+              95% <= 42,80 milliseconds
+              98% <= 44,75 milliseconds
+              99% <= 45,17 milliseconds
+            99.9% <= 49,91 milliseconds
+
+
+13.05.2022 16.40.56 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 13171
+         mean rate = 299,29 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,02 calls/second
+    15-minute rate = 280,44 calls/second
+               min = 27,11 milliseconds
+               max = 54,17 milliseconds
+              mean = 33,66 milliseconds
+            stddev = 4,17 milliseconds
+            median = 32,71 milliseconds
+              75% <= 35,51 milliseconds
+              95% <= 42,66 milliseconds
+              98% <= 43,28 milliseconds
+              99% <= 51,03 milliseconds
+            99.9% <= 54,17 milliseconds
+
+
+13.05.2022 16.40.57 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 13485
+         mean rate = 299,61 calls/second
+     1-minute rate = 290,62 calls/second
+     5-minute rate = 282,42 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 26,98 milliseconds
+               max = 42,61 milliseconds
+              mean = 32,22 milliseconds
+            stddev = 2,56 milliseconds
+            median = 31,99 milliseconds
+              75% <= 33,91 milliseconds
+              95% <= 36,47 milliseconds
+              98% <= 39,13 milliseconds
+              99% <= 40,90 milliseconds
+            99.9% <= 42,61 milliseconds
+
+
+13.05.2022 16.40.58 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 13797
+         mean rate = 299,88 calls/second
+     1-minute rate = 290,62 calls/second
+     5-minute rate = 282,42 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 26,79 milliseconds
+               max = 54,53 milliseconds
+              mean = 31,58 milliseconds
+            stddev = 2,98 milliseconds
+            median = 31,25 milliseconds
+              75% <= 32,81 milliseconds
+              95% <= 35,26 milliseconds
+              98% <= 37,57 milliseconds
+              99% <= 45,06 milliseconds
+            99.9% <= 54,53 milliseconds
+
+
+13.05.2022 16.40.59 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 14112
+         mean rate = 300,21 calls/second
+     1-minute rate = 290,62 calls/second
+     5-minute rate = 282,42 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 26,88 milliseconds
+               max = 44,24 milliseconds
+              mean = 31,95 milliseconds
+            stddev = 3,15 milliseconds
+            median = 31,38 milliseconds
+              75% <= 33,45 milliseconds
+              95% <= 37,52 milliseconds
+              98% <= 42,29 milliseconds
+              99% <= 43,78 milliseconds
+            99.9% <= 44,24 milliseconds
+
+
+13.05.2022 16.41.00 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 14383
+         mean rate = 299,60 calls/second
+     1-minute rate = 290,62 calls/second
+     5-minute rate = 282,42 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 27,43 milliseconds
+               max = 61,56 milliseconds
+              mean = 36,87 milliseconds
+            stddev = 5,10 milliseconds
+            median = 36,40 milliseconds
+              75% <= 40,29 milliseconds
+              95% <= 45,78 milliseconds
+              98% <= 48,34 milliseconds
+              99% <= 50,43 milliseconds
+            99.9% <= 61,56 milliseconds
+
+
+13.05.2022 16.41.01 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 14661
+         mean rate = 299,18 calls/second
+     1-minute rate = 290,62 calls/second
+     5-minute rate = 282,42 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 27,09 milliseconds
+               max = 63,29 milliseconds
+              mean = 35,61 milliseconds
+            stddev = 5,08 milliseconds
+            median = 34,48 milliseconds
+              75% <= 38,23 milliseconds
+              95% <= 46,05 milliseconds
+              98% <= 48,96 milliseconds
+              99% <= 50,50 milliseconds
+            99.9% <= 63,29 milliseconds
+
+
+13.05.2022 16.41.02 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 14945
+         mean rate = 298,84 calls/second
+     1-minute rate = 290,74 calls/second
+     5-minute rate = 282,58 calls/second
+    15-minute rate = 280,64 calls/second
+               min = 26,89 milliseconds
+               max = 67,13 milliseconds
+              mean = 35,61 milliseconds
+            stddev = 5,28 milliseconds
+            median = 34,90 milliseconds
+              75% <= 38,41 milliseconds
+              95% <= 45,14 milliseconds
+              98% <= 49,02 milliseconds
+              99% <= 54,22 milliseconds
+            99.9% <= 67,13 milliseconds
+
+
+13.05.2022 16.41.03 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 15215
+         mean rate = 298,31 calls/second
+     1-minute rate = 290,74 calls/second
+     5-minute rate = 282,58 calls/second
+    15-minute rate = 280,64 calls/second
+               min = 27,03 milliseconds
+               max = 82,67 milliseconds
+              mean = 37,09 milliseconds
+            stddev = 7,63 milliseconds
+            median = 35,98 milliseconds
+              75% <= 39,63 milliseconds
+              95% <= 46,62 milliseconds
+              98% <= 70,63 milliseconds
+              99% <= 76,53 milliseconds
+            99.9% <= 82,67 milliseconds
+
+
+13.05.2022 16.41.04 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 15487
+         mean rate = 297,75 calls/second
+     1-minute rate = 290,74 calls/second
+     5-minute rate = 282,58 calls/second
+    15-minute rate = 280,64 calls/second
+               min = 27,20 milliseconds
+               max = 57,86 milliseconds
+              mean = 37,05 milliseconds
+            stddev = 5,60 milliseconds
+            median = 36,85 milliseconds
+              75% <= 40,89 milliseconds
+              95% <= 45,71 milliseconds
+              98% <= 50,11 milliseconds
+              99% <= 53,83 milliseconds
+            99.9% <= 57,86 milliseconds
+
+
+13.05.2022 16.41.05 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 15758
+         mean rate = 297,25 calls/second
+     1-minute rate = 290,74 calls/second
+     5-minute rate = 282,58 calls/second
+    15-minute rate = 280,64 calls/second
+               min = 27,81 milliseconds
+               max = 48,12 milliseconds
+              mean = 36,22 milliseconds
+            stddev = 4,45 milliseconds
+            median = 35,93 milliseconds
+              75% <= 39,02 milliseconds
+              95% <= 43,76 milliseconds
+              98% <= 46,31 milliseconds
+              99% <= 46,51 milliseconds
+            99.9% <= 48,12 milliseconds
+
+
+13.05.2022 16.41.06 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 16036
+         mean rate = 296,91 calls/second
+     1-minute rate = 290,74 calls/second
+     5-minute rate = 282,58 calls/second
+    15-minute rate = 280,64 calls/second
+               min = 28,04 milliseconds
+               max = 62,69 milliseconds
+              mean = 36,62 milliseconds
+            stddev = 6,29 milliseconds
+            median = 35,03 milliseconds
+              75% <= 40,07 milliseconds
+              95% <= 47,30 milliseconds
+              98% <= 56,50 milliseconds
+              99% <= 62,32 milliseconds
+            99.9% <= 62,69 milliseconds
+
+
+13.05.2022 16.41.07 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 16307
+         mean rate = 296,43 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,41 calls/second
+    15-minute rate = 280,60 calls/second
+               min = 28,24 milliseconds
+               max = 50,14 milliseconds
+              mean = 36,39 milliseconds
+            stddev = 4,14 milliseconds
+            median = 35,96 milliseconds
+              75% <= 38,91 milliseconds
+              95% <= 43,84 milliseconds
+              98% <= 45,26 milliseconds
+              99% <= 47,62 milliseconds
+            99.9% <= 50,14 milliseconds
+
+
+13.05.2022 16.41.08 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 16584
+         mean rate = 296,10 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,41 calls/second
+    15-minute rate = 280,60 calls/second
+               min = 27,06 milliseconds
+               max = 53,80 milliseconds
+              mean = 36,51 milliseconds
+            stddev = 4,32 milliseconds
+            median = 35,67 milliseconds
+              75% <= 39,11 milliseconds
+              95% <= 44,28 milliseconds
+              98% <= 47,96 milliseconds
+              99% <= 51,14 milliseconds
+            99.9% <= 53,80 milliseconds
+
+
+13.05.2022 16.41.09 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 16858
+         mean rate = 295,71 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,41 calls/second
+    15-minute rate = 280,60 calls/second
+               min = 26,64 milliseconds
+               max = 51,28 milliseconds
+              mean = 36,28 milliseconds
+            stddev = 5,40 milliseconds
+            median = 36,13 milliseconds
+              75% <= 40,22 milliseconds
+              95% <= 46,93 milliseconds
+              98% <= 49,76 milliseconds
+              99% <= 50,07 milliseconds
+            99.9% <= 51,28 milliseconds
+
+
+13.05.2022 16.41.10 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 17132
+         mean rate = 295,34 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,41 calls/second
+    15-minute rate = 280,60 calls/second
+               min = 25,61 milliseconds
+               max = 53,01 milliseconds
+              mean = 36,78 milliseconds
+            stddev = 4,24 milliseconds
+            median = 36,32 milliseconds
+              75% <= 38,98 milliseconds
+              95% <= 44,89 milliseconds
+              98% <= 48,24 milliseconds
+              99% <= 48,80 milliseconds
+            99.9% <= 53,01 milliseconds
+
+
+13.05.2022 16.41.11 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 17398
+         mean rate = 294,85 calls/second
+     1-minute rate = 289,28 calls/second
+     5-minute rate = 282,41 calls/second
+    15-minute rate = 280,60 calls/second
+               min = 27,30 milliseconds
+               max = 59,55 milliseconds
+              mean = 37,28 milliseconds
+            stddev = 6,55 milliseconds
+            median = 35,57 milliseconds
+              75% <= 40,94 milliseconds
+              95% <= 50,21 milliseconds
+              98% <= 58,42 milliseconds
+              99% <= 59,40 milliseconds
+            99.9% <= 59,55 milliseconds
+
+
+13.05.2022 16.41.12 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 17698
+         mean rate = 294,93 calls/second
+     1-minute rate = 288,31 calls/second
+     5-minute rate = 282,32 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 26,59 milliseconds
+               max = 46,23 milliseconds
+              mean = 33,55 milliseconds
+            stddev = 4,15 milliseconds
+            median = 32,66 milliseconds
+              75% <= 36,42 milliseconds
+              95% <= 41,80 milliseconds
+              98% <= 43,07 milliseconds
+              99% <= 43,57 milliseconds
+            99.9% <= 46,23 milliseconds
+
+
+13.05.2022 16.41.13 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 18003
+         mean rate = 295,11 calls/second
+     1-minute rate = 288,31 calls/second
+     5-minute rate = 282,32 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 27,13 milliseconds
+               max = 43,53 milliseconds
+              mean = 32,10 milliseconds
+            stddev = 2,62 milliseconds
+            median = 31,96 milliseconds
+              75% <= 33,52 milliseconds
+              95% <= 36,38 milliseconds
+              98% <= 38,46 milliseconds
+              99% <= 40,81 milliseconds
+            99.9% <= 43,53 milliseconds
+
+
+13.05.2022 16.41.14 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 18305
+         mean rate = 295,22 calls/second
+     1-minute rate = 288,31 calls/second
+     5-minute rate = 282,32 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 26,71 milliseconds
+               max = 50,99 milliseconds
+              mean = 33,66 milliseconds
+            stddev = 4,88 milliseconds
+            median = 32,46 milliseconds
+              75% <= 35,65 milliseconds
+              95% <= 44,68 milliseconds
+              98% <= 48,32 milliseconds
+              99% <= 49,06 milliseconds
+            99.9% <= 50,99 milliseconds
+
+
+13.05.2022 16.41.15 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 18598
+         mean rate = 295,15 calls/second
+     1-minute rate = 288,31 calls/second
+     5-minute rate = 282,32 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 27,02 milliseconds
+               max = 47,36 milliseconds
+              mean = 33,61 milliseconds
+            stddev = 3,84 milliseconds
+            median = 32,94 milliseconds
+              75% <= 35,59 milliseconds
+              95% <= 41,69 milliseconds
+              98% <= 44,01 milliseconds
+              99% <= 45,52 milliseconds
+            99.9% <= 47,36 milliseconds
+
+
+13.05.2022 16.41.16 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 18889
+         mean rate = 295,11 calls/second
+     1-minute rate = 288,31 calls/second
+     5-minute rate = 282,32 calls/second
+    15-minute rate = 280,58 calls/second
+               min = 27,54 milliseconds
+               max = 52,87 milliseconds
+              mean = 34,88 milliseconds
+            stddev = 5,28 milliseconds
+            median = 33,48 milliseconds
+              75% <= 37,58 milliseconds
+              95% <= 45,52 milliseconds
+              98% <= 50,73 milliseconds
+              99% <= 52,23 milliseconds
+            99.9% <= 52,87 milliseconds
+
+
+13.05.2022 16.41.17 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 19195
+         mean rate = 295,28 calls/second
+     1-minute rate = 289,18 calls/second
+     5-minute rate = 282,60 calls/second
+    15-minute rate = 280,68 calls/second
+               min = 27,05 milliseconds
+               max = 52,84 milliseconds
+              mean = 32,66 milliseconds
+            stddev = 3,61 milliseconds
+            median = 32,06 milliseconds
+              75% <= 34,15 milliseconds
+              95% <= 38,64 milliseconds
+              98% <= 43,36 milliseconds
+              99% <= 49,98 milliseconds
+            99.9% <= 52,84 milliseconds
+
+
+13.05.2022 16.41.18 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 19504
+         mean rate = 295,48 calls/second
+     1-minute rate = 289,18 calls/second
+     5-minute rate = 282,60 calls/second
+    15-minute rate = 280,68 calls/second
+               min = 27,38 milliseconds
+               max = 40,78 milliseconds
+              mean = 32,14 milliseconds
+            stddev = 2,75 milliseconds
+            median = 31,56 milliseconds
+              75% <= 33,37 milliseconds
+              95% <= 38,39 milliseconds
+              98% <= 39,60 milliseconds
+              99% <= 40,39 milliseconds
+            99.9% <= 40,78 milliseconds
+
+
+13.05.2022 16.41.19 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-COUNT_MANY
+             count = 19789
+         mean rate = 295,33 calls/second
+     1-minute rate = 289,18 calls/second
+     5-minute rate = 282,60 calls/second
+    15-minute rate = 280,68 calls/second
+               min = 27,27 milliseconds
+               max = 48,81 milliseconds
+              mean = 34,15 milliseconds
+            stddev = 4,61 milliseconds
+            median = 33,14 milliseconds
+              75% <= 36,10 milliseconds
+              95% <= 44,58 milliseconds
+              98% <= 48,40 milliseconds
+              99% <= 48,69 milliseconds
+            99.9% <= 48,81 milliseconds
+
+
+2022-05-13 16:41:20,658 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Done (in time) in 67681 ms 
+2022-05-13 16:41:20,664 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - affected documents: 253714
+2022-05-13 16:41:20,664 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - >>> closeConnections production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:41:20,664 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - count: 20000
+2022-05-13 16:41:20,664 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - FifteenMinuteRate: 280.6833805885569
+2022-05-13 16:41:20,665 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - FiveMinuteRate: 282.6021364877536
+2022-05-13 16:41:20,665 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - OneMinuteRate: 289.1832597724156
+2022-05-13 16:41:20,665 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - MeanRate: 295.4682763663012
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 75thPercentile: 36.215709
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 95thPercentile: 43.394332999999996
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 98thPercentile: 48.68625
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 99thPercentile: 50.843833
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 999thPercentile: 60.35825
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Min: 25.920875
+2022-05-13 16:41:20,668 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Max: 61.472874999999995
+2022-05-13 16:41:20,669 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Mean: 34.14895350751657
+2022-05-13 16:41:20,669 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Median: 33.119499999999995
+2022-05-13 16:41:20,669 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot StdDev: 4.883904500286108
+2022-05-13 16:41:20,669 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Size: 1028
+13.05.2022 16.41.20 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-run-COUNT_MANY
+             count = 20000
+         mean rate = 295,44 calls/second
+     1-minute rate = 289,18 calls/second
+     5-minute rate = 282,60 calls/second
+    15-minute rate = 280,68 calls/second
+               min = 25,92 milliseconds
+               max = 61,47 milliseconds
+              mean = 34,15 milliseconds
+            stddev = 4,88 milliseconds
+            median = 33,12 milliseconds
+              75% <= 36,22 milliseconds
+              95% <= 43,39 milliseconds
+              98% <= 48,69 milliseconds
+              99% <= 50,84 milliseconds
+            99.9% <= 60,36 milliseconds
+
+
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - stopReporters
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - consoleReporter stopped
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - allConsoleReporter stopped
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - csvReporter stopped
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - If run took more than 1 second, csv-file 'stats-per-second-COUNT_MANY.csv' saved in folder: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - csvReporterAll stopped
+2022-05-13 16:41:20,674 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Summary of statistics saved in csv-file 'stats-per-run-COUNT_MANY.csv' located in folder: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version
+2022-05-13 16:41:20,697 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:11, serverValue:13208}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,700 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:3, serverValue:13210}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,700 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:13215}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,700 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:13211}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,701 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:13206}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,701 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:5, serverValue:13207}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,701 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:13209}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,701 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:13213}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,701 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:10, serverValue:13214}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,701 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:9, serverValue:13212}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:41:20,702 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - <<< closeConnections production-shard-00-01.vx60e.mongodb.net:27017

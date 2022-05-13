@@ -1,0 +1,118 @@
+2022-05-13 16:32:24,420 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - >>> init production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:24,507 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[production-shard-00-01.vx60e.mongodb.net:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=50000}
+2022-05-13 16:32:24,518 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - <<< init
+2022-05-13 16:32:24,525 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-05-13 16:32:24,754 [cluster-ClusterId{value='627e6bf8aa8b4962c147e3f3', description='null'}-production-shard-00-01.vx60e.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:12946}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:24,786 [cluster-ClusterId{value='627e6bf8aa8b4962c147e3f3', description='null'}-production-shard-00-01.vx60e.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=production-shard-00-01.vx60e.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30344208, setName='atlas-11ct6i-shard-0', canonicalAddress=production-shard-00-01.vx60e.mongodb.net:27017, hosts=[production-shard-00-00.vx60e.mongodb.net:27017, production-shard-00-01.vx60e.mongodb.net:27017, production-shard-00-02.vx60e.mongodb.net:27017], passives=[], arbiters=[], primary='production-shard-00-01.vx60e.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='EUROPE_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000001c, setVersion=1, lastWriteDate=Fri May 13 16:32:24 CEST 2022, lastUpdateTimeNanos=356689629116708}
+2022-05-13 16:32:25,091 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:12947}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,192 [main] INFO  d.i.mongodb.perf.OperationExecutor - >>> OperationExecutor threadCount: 10, opsCount: 500, maxDurationInSeconds: 3600, operation: UpdateOperation
+2022-05-13 16:32:25,192 [main] INFO  d.i.mongodb.perf.OperationExecutor - java execution path: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version/mongodb-performance-test.jar
+2022-05-13 16:32:25,467 [pool-2-thread-10] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:12949}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,484 [pool-2-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:12950}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,484 [pool-2-thread-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:12948}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,516 [pool-2-thread-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:12951}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,518 [pool-2-thread-6] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:12955}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,522 [pool-2-thread-9] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:12953}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,527 [pool-2-thread-4] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:12956}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,530 [pool-2-thread-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:12952}] to production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:25,533 [pool-2-thread-8] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:12954}] to production-shard-00-01.vx60e.mongodb.net:27017
+13.05.2022 16.32.26 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-UPDATE_ONE
+             count = 190
+         mean rate = 188,33 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 29,73 milliseconds
+               max = 367,85 milliseconds
+              mean = 51,47 milliseconds
+            stddev = 66,62 milliseconds
+            median = 36,27 milliseconds
+              75% <= 38,75 milliseconds
+              95% <= 170,39 milliseconds
+              98% <= 361,84 milliseconds
+              99% <= 367,82 milliseconds
+            99.9% <= 367,85 milliseconds
+
+
+13.05.2022 16.32.27 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-UPDATE_ONE
+             count = 385
+         mean rate = 191,61 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 31,32 milliseconds
+               max = 100,24 milliseconds
+              mean = 51,44 milliseconds
+            stddev = 14,49 milliseconds
+            median = 49,77 milliseconds
+              75% <= 62,52 milliseconds
+              95% <= 76,13 milliseconds
+              98% <= 93,29 milliseconds
+              99% <= 98,95 milliseconds
+            99.9% <= 100,24 milliseconds
+
+
+2022-05-13 16:32:27,622 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Done (in time) in 2425 ms 
+2022-05-13 16:32:27,624 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - >>> closeConnections production-shard-00-01.vx60e.mongodb.net:27017
+2022-05-13 16:32:27,627 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - affected documents: 500
+2022-05-13 16:32:27,631 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - count: 500
+2022-05-13 16:32:27,631 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - FifteenMinuteRate: 0.0
+2022-05-13 16:32:27,631 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - FiveMinuteRate: 0.0
+2022-05-13 16:32:27,631 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - OneMinuteRate: 0.0
+2022-05-13 16:32:27,632 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - MeanRate: 205.20608527843845
+2022-05-13 16:32:27,642 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 75thPercentile: 47.594708
+2022-05-13 16:32:27,642 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 95thPercentile: 72.385042
+2022-05-13 16:32:27,642 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 98thPercentile: 98.92658399999999
+2022-05-13 16:32:27,642 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 99thPercentile: 354.06316599999997
+2022-05-13 16:32:27,642 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 999thPercentile: 367.857125
+2022-05-13 16:32:27,643 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Min: 29.743125
+2022-05-13 16:32:27,643 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Max: 367.857125
+2022-05-13 16:32:27,643 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Mean: 47.91676057217652
+2022-05-13 16:32:27,643 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Median: 37.987625
+2022-05-13 16:32:27,643 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot StdDev: 42.177531533194426
+2022-05-13 16:32:27,643 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Size: 500
+13.05.2022 16.32.27 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-run-UPDATE_ONE
+             count = 500
+         mean rate = 204,17 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 29,74 milliseconds
+               max = 367,86 milliseconds
+              mean = 47,92 milliseconds
+            stddev = 42,18 milliseconds
+            median = 37,99 milliseconds
+              75% <= 47,59 milliseconds
+              95% <= 72,39 milliseconds
+              98% <= 98,93 milliseconds
+              99% <= 354,06 milliseconds
+            99.9% <= 367,86 milliseconds
+
+
+2022-05-13 16:32:27,647 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - stopReporters
+2022-05-13 16:32:27,648 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - consoleReporter stopped
+2022-05-13 16:32:27,648 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - allConsoleReporter stopped
+2022-05-13 16:32:27,648 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - csvReporter stopped
+2022-05-13 16:32:27,648 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - If run took more than 1 second, csv-file 'stats-per-second-UPDATE_ONE.csv' saved in folder: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version
+2022-05-13 16:32:27,648 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - csvReporterAll stopped
+2022-05-13 16:32:27,648 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Summary of statistics saved in csv-file 'stats-per-run-UPDATE_ONE.csv' located in folder: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version
+2022-05-13 16:32:27,671 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:12947}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,672 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:11, serverValue:12955}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,672 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:5, serverValue:12948}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,672 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:12950}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,672 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:12953}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,672 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:12949}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,673 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:9, serverValue:12954}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,673 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:3, serverValue:12951}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,673 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:10, serverValue:12952}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,673 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:12956}] to production-shard-00-01.vx60e.mongodb.net:27017 because the pool has been closed.
+2022-05-13 16:32:27,674 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - <<< closeConnections production-shard-00-01.vx60e.mongodb.net:27017

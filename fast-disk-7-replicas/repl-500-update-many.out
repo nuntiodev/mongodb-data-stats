@@ -1,0 +1,118 @@
+2022-05-13 16:48:13,453 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - >>> init 34.89.191.200:27017
+2022-05-13 16:48:13,540 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[34.89.191.200:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=50000}
+2022-05-13 16:48:13,550 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - <<< init
+2022-05-13 16:48:13,556 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-05-13 16:48:13,658 [cluster-ClusterId{value='627e6fad3b0a5e12db86b739', description='null'}-34.89.191.200:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1197}] to 34.89.191.200:27017
+2022-05-13 16:48:13,694 [cluster-ClusterId{value='627e6fad3b0a5e12db86b739', description='null'}-34.89.191.200:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=34.89.191.200:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34196916, setName='rs0', canonicalAddress=mongodb-0.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017, hosts=[mongodb-5.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017, mongodb-2.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017, mongodb-1.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017, mongodb-0.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017, mongodb-3.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017, mongodb-4.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017], passives=[mongodb-6.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017], arbiters=[mongodb-arbiter-0.mongodb-arbiter-headless.mongodb-fast-repl.svc.cluster.local:27017], primary='mongodb-0.mongodb-headless.mongodb-fast-repl.svc.cluster.local:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=18, lastWriteDate=Fri May 13 16:48:13 CEST 2022, lastUpdateTimeNanos=357638573789541}
+2022-05-13 16:48:14,020 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:1198}] to 34.89.191.200:27017
+2022-05-13 16:48:14,298 [main] INFO  d.i.mongodb.perf.OperationExecutor - >>> OperationExecutor threadCount: 10, opsCount: 500, maxDurationInSeconds: 3600, operation: UpdateOperation
+2022-05-13 16:48:14,298 [main] INFO  d.i.mongodb.perf.OperationExecutor - java execution path: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version/mongodb-performance-test.jar
+2022-05-13 16:48:14,690 [pool-2-thread-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:1202}] to 34.89.191.200:27017
+2022-05-13 16:48:14,711 [pool-2-thread-10] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:1199}] to 34.89.191.200:27017
+2022-05-13 16:48:14,711 [pool-2-thread-9] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:1206}] to 34.89.191.200:27017
+2022-05-13 16:48:14,717 [pool-2-thread-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:1204}] to 34.89.191.200:27017
+2022-05-13 16:48:14,737 [pool-2-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:1203}] to 34.89.191.200:27017
+2022-05-13 16:48:14,738 [pool-2-thread-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:1200}] to 34.89.191.200:27017
+2022-05-13 16:48:14,739 [pool-2-thread-6] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:1205}] to 34.89.191.200:27017
+2022-05-13 16:48:14,750 [pool-2-thread-4] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:1207}] to 34.89.191.200:27017
+2022-05-13 16:48:14,780 [pool-2-thread-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:1201}] to 34.89.191.200:27017
+13.05.2022 16.48.15 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-UPDATE_MANY
+             count = 100
+         mean rate = 98,88 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 27,64 milliseconds
+               max = 504,00 milliseconds
+              mean = 89,94 milliseconds
+            stddev = 125,31 milliseconds
+            median = 36,89 milliseconds
+              75% <= 49,76 milliseconds
+              95% <= 470,42 milliseconds
+              98% <= 480,71 milliseconds
+              99% <= 503,76 milliseconds
+            99.9% <= 504,00 milliseconds
+
+
+13.05.2022 16.48.16 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-second-UPDATE_MANY
+             count = 239
+         mean rate = 118,85 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 28,14 milliseconds
+               max = 220,19 milliseconds
+              mean = 78,63 milliseconds
+            stddev = 53,86 milliseconds
+            median = 60,74 milliseconds
+              75% <= 94,18 milliseconds
+              95% <= 214,35 milliseconds
+              98% <= 216,46 milliseconds
+              99% <= 219,18 milliseconds
+            99.9% <= 220,19 milliseconds
+
+
+2022-05-13 16:48:17,270 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Done (in time) in 2962 ms 
+2022-05-13 16:48:17,271 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - >>> closeConnections 34.89.191.200:27017
+2022-05-13 16:48:17,271 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - affected documents: 0
+2022-05-13 16:48:17,271 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - count: 500
+2022-05-13 16:48:17,271 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - FifteenMinuteRate: 0.0
+2022-05-13 16:48:17,272 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - FiveMinuteRate: 0.0
+2022-05-13 16:48:17,272 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - OneMinuteRate: 0.0
+2022-05-13 16:48:17,272 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - MeanRate: 168.515149163589
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 75thPercentile: 46.828084
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 95thPercentile: 166.432708
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 98thPercentile: 220.260458
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 99thPercentile: 470.350083
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot 999thPercentile: 504.01174999999995
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Min: 27.233166999999998
+2022-05-13 16:48:17,274 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Max: 504.01174999999995
+2022-05-13 16:48:17,275 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Mean: 58.32148138253867
+2022-05-13 16:48:17,275 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Median: 36.065542
+2022-05-13 16:48:17,275 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot StdDev: 66.77465066609003
+2022-05-13 16:48:17,275 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Snapshot Size: 500
+13.05.2022 16.48.17 ============================================================
+
+-- Timers ----------------------------------------------------------------------
+stats-per-run-UPDATE_MANY
+             count = 500
+         mean rate = 168,21 calls/second
+     1-minute rate = 0,00 calls/second
+     5-minute rate = 0,00 calls/second
+    15-minute rate = 0,00 calls/second
+               min = 27,23 milliseconds
+               max = 504,01 milliseconds
+              mean = 58,32 milliseconds
+            stddev = 66,77 milliseconds
+            median = 36,07 milliseconds
+              75% <= 46,83 milliseconds
+              95% <= 166,43 milliseconds
+              98% <= 220,26 milliseconds
+              99% <= 470,35 milliseconds
+            99.9% <= 504,01 milliseconds
+
+
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - stopReporters
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - consoleReporter stopped
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - allConsoleReporter stopped
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - csvReporter stopped
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - If run took more than 1 second, csv-file 'stats-per-second-UPDATE_MANY.csv' saved in folder: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - csvReporterAll stopped
+2022-05-13 16:48:17,282 [pool-1-thread-1] INFO  d.i.mongodb.perf.OperationExecutor - Summary of statistics saved in csv-file 'stats-per-run-UPDATE_MANY.csv' located in folder: /Users/oscarorellana/Desktop/softcorp/doubble/mongodb-performance-test/latest-version
+2022-05-13 16:48:17,303 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:11, serverValue:1206}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,304 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:5, serverValue:1199}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:1205}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:10, serverValue:1203}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:1207}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:1198}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:1204}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:3, serverValue:1201}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:1200}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,305 [main] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:9, serverValue:1202}] to 34.89.191.200:27017 because the pool has been closed.
+2022-05-13 16:48:17,306 [main] INFO  d.i.mongodb.perf.MongoDbAccessor - <<< closeConnections 34.89.191.200:27017
